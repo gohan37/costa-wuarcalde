@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restobar MultiExperiencia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <section class="hero" id="banner">
+    <div class="banner-img banner1"></div>
+    <div class="banner-img banner2"></div>
+    <div class="hero-text">
+      <h1>Restobar MultiExperiencia</h1>
+      <p>Comida, deportes y diversión en un solo lugar</p>
+    </div>
+  </section>
+
+   <!-- 🟦 Sección de accesos -->
+   <section class="accesos">
+    <div class="acceso" onclick="location.href='restaurante.html'">
+      <img src="restaurante.jpg" alt="Restaurante">
+      <h3>Restaurante</h3>
+    </div>
+    <div class="acceso" onclick="location.href='deportes.html'">
+      <img src="deporte.jpg" alt="Deporte">
+      <h3>Deporte</h3>
+    </div>
+    <div class="acceso" onclick="location.href='eventos.html'">
+      <img src="eventos.jpg" alt="Eventos">
+      <h3>Eventos</h3>
+    </div>
+    <div class="acceso" onclick="location.href='reservas.html'">
+      <img src="reservas.jpeg" alt="Reservas">
+      <h3>Reservas</h3>
+    </div>
+  </section>
+
+  <!-- SECCIÓN QUIÉNES SOMOS -->
+  <section class="about">
+    <h2>¿Quiénes somos?</h2>
+    <p>Un espacio único para disfrutar de la mejor comida, el deporte y el aire libre.</p>
+  </section>
+
+  <!-- Y dejamos listas las demás secciones para ir completando -->
+  <section class="services" id="servicios"></section>
+  <section class="gallery" id="galeria"></section>
+  <section class="contact" id="contacto"></section>
+  <section class="location" id="ubicacion"></section>
+
+  <footer>
+    <p>© 2025 Restobar MultiExperiencia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const banner = document.getElementById('banner');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        banner.classList.add('hidden');
+      } else {
+        banner.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
